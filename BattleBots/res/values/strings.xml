@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BattleBots</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string><string name="cbbts">Connect to Battlebots</string>
+    
+    <string name="servadd">Server Address: </string>
+    <string name="armval">Armor Value: </string>
+    <string name="scanval">Scan Value:</string>
+    <string name="bulletdmg">Bullet Damage:</string>
+    <string name="servaddt"></string>
+    <string name="armt"/>
+    <string name="scant"/>
+    <string name="bulletdmgt"/>
+    <string name="botnamet"/>
+    <string name="botname">Bot Name:</string>
+    <string name="ConnectionButton">Connect</string>
+
+</resources>

@@ -8,23 +8,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.barella4730.battlebots.BattleBots$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/lblBBConn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:text="@string/cbbts" />
-
     <EditText
         android:id="@+id/serverAddIn"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/lblBBConn"
         android:ems="10"
-        android:inputType="textNoSuggestions" 
-        android:text="@string/servaddt">
+        android:inputType="textNoSuggestions"
+        android:text="@string/servaddt" >
 
         <requestFocus />
     </EditText>
@@ -35,100 +26,26 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/serverAddIn"
         android:layout_alignBottom="@+id/serverAddIn"
-        android:layout_alignLeft="@+id/lblBBConn"
-        android:layout_below="@+id/lblBBConn"
         android:text="@string/servadd" />
-    
-    <TextView
-        android:id="@+id/lblArmorValue"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/armorIn"
-        android:layout_alignBottom="@+id/armorIn"
-        android:layout_alignLeft="@+id/lblBBConn"
-        android:layout_below="@+id/lblservAdd"
-        android:text="@string/armval" />
 
-    <EditText
-        android:id="@+id/armorIn"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/serverAddIn"
-        android:layout_below="@+id/lblservAdd"
-        android:ems="10"
-        android:inputType="textNoSuggestions" 
-        android:text="@string/armt"/>
-    
-   <TextView
-        android:id="@+id/lblScanValue"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/scanIn"
-        android:layout_alignBottom="@+id/scanIn"
-        android:layout_alignLeft="@+id/lblBBConn"
-        android:layout_below="@+id/lblArmorValue"
-        android:text="@string/scanval" />
-
-    <EditText
-        android:id="@+id/scanIn"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/armorIn"
-        android:layout_below="@+id/armorIn"
-        android:ems="10"
-        android:inputType="textNoSuggestions"
-        android:text="@string/scant" />
-    
-    <TextView
-        android:id="@+id/lblBulletDmg"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bulletDmgIn"
-        android:layout_alignBottom="@+id/bulletDmgIn"
-        android:layout_alignLeft="@+id/lblBBConn"
-        android:layout_below="@+id/lblScanValue"
-        android:text="@string/bulletdmg" />
-
-    <EditText
-        android:id="@+id/bulletDmgIn"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/armorIn"
-        android:layout_below="@+id/scanIn"
-        android:ems="10"
-        android:inputType="textNoSuggestions" 
-        android:text="@string/bulletdmgt"/>
-    
-     <TextView
-        android:id="@+id/lblBotName"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/botNameIn"
-        android:layout_alignBottom="@+id/botNameIn"
-        android:layout_alignLeft="@+id/lblBBConn"
-        android:layout_below="@+id/lblbulletDmg"
-        android:text="@string/botname" />
-
-    <EditText
-        android:id="@+id/botNameIn"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/armorIn"
-        android:layout_below="@+id/bulletDmgIn"
-        android:ems="10"
-        android:inputType="textNoSuggestions" 
-        android:text="@string/botnamet"/>
-
-    <EditText
-        android:id="@+id/connectMessages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:id="@+id/appMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_above="@+id/btnConnect"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/botNameIn"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textMultiLine" />
+        android:layout_below="@+id/lblservAdd" >
+
+        <EditText
+            android:id="@+id/appMsgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnConnect"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/botNameIn"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+    </ScrollView>
 
     <Button
         android:id="@+id/btnConnect"
